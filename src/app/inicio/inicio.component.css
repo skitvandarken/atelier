@@ -1,0 +1,42 @@
+body, h1, h2, h3 {
+
+  font-family: 'Calibri', sans-serif;
+
+}
+.titulo {
+margin-top: 12px;
+}
+
+.titulodeservicos{
+
+  color: black;
+
+}
+
+.fotospequenas{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: auto;
+  display: inline;
+}
+
+
+.botoes {
+padding-top: 5%;
+padding-bottom: 5%;
+text-align: center;
+display:block;
+
+}
+
+.duascolunas{
+
+  padding-top: 5%;
+
+}
+
+.uk-button{
+
+  background-color: #AC8030;
+  color: #ffffff
+}

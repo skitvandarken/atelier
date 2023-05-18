@@ -1,0 +1,95 @@
+<app-topbar></app-topbar>
+<app-navbar></app-navbar>
+<div class="uk-container titulo" >
+  <h1 class="uk-heading-divider"><span>ATELIER MUNDO GLAMOUR</span></h1>
+</div>
+
+<div class="uk-container">
+  <h3 class="uk-heading subtitulo"> FAZER PEDIDO</h3>
+  <h2 class="uk-heading">  </h2>
+  <p>Preencha o formulário, anexe o comprovativo de pagamento e aguarde nossa confirmação para receber sua encomenda.</p>
+</div>
+
+<div class="uk-container">
+<div class="uk-position-relative" uk-slideshow="animation: fade">
+
+  <ul class="uk-slideshow-items">
+      <li>
+          <img src="assets/300x300.png" alt="" uk-cover>
+      </li>
+      <li>
+          <img src="assets/300x300.png" alt="" uk-cover>
+      </li>
+      <li>
+          <img src="assets/300x300.png" alt="" uk-cover>
+      </li>
+  </ul>
+
+  <div class="uk-position-bottom-center uk-position-small">
+      <ul class="uk-thumbnav">
+          <li uk-slideshow-item="0"><a href="#"><img src="assets/300x300.png" width="100" height="67" alt=""></a></li>
+          <li uk-slideshow-item="1"><a href="#"><img src="assets/300x300.png" width="100" height="67" alt=""></a></li>
+          <li uk-slideshow-item="2"><a href="#"><img src="assets/300x300.png" width="100" height="67" alt=""></a></li>
+      </ul>
+  </div>
+</div>
+</div>
+<div class="uk-container titulo">
+<form class="uk-form-stacked">
+  <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-text">Nome</label>
+      <div class="uk-form-controls">
+          <input class="uk-input" id="form-stacked-text" type="text" placeholder="Seu nome completo">
+      </div>
+  </div>
+
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-email">E-mail</label>
+    <div class="uk-form-controls">
+      <input class="uk-input" id="form-stacked-email" type="email" placeholder="seuemail@google.com">
+    </div>
+  </div>
+
+  <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-select">Medida por idade</label>
+      <div class="uk-form-controls">
+          <select class="uk-select" id="form-stacked-select">
+              <option>Selecione uma idade</option>
+              <option>18 anos</option>
+              <option>19 anos</option>
+              <option>20 anos</option>
+              <option>21 anos</option>
+              <option>22 anos</option>
+              <option>23 anos</option>
+              <option>24 anos</option>
+              <option>25 anos ou mais</option>
+          </select>
+      </div>
+  </div>
+
+  <div class="uk-margin" >
+      <label class="uk-form-label" for="form-stacked-file">Carregar Comprovativo</label>
+      <div class="uk-form-controls">
+          <div class="uk-placeholder uk-text-center">
+              <span uk-icon="icon: cloud-upload"></span>
+              <span class="uk-text-middle">Arraste e solte ou</span>
+              <div uk-form-custom>
+                  <input type="file">
+                  <span class="uk-link">selecione um arquivo</span>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-textarea">Requisitos</label>
+      <div class="uk-form-controls">
+          <textarea class="uk-textarea" id="form-stacked-textarea" rows="5" placeholder="Digite aqui os seus requisitos"></textarea>
+      </div>
+  </div>
+
+  <div class="uk-margin">
+      <button class="uk-button uk-button-primary" type="submit">Fazer pedido</button>
+  </div>
+</form>
+</div>

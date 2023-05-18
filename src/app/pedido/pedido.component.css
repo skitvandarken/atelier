@@ -1,0 +1,22 @@
+.subtitulo {
+  padding-top: 2%;
+}
+
+.botoes {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  display:block;
+
+  }
+
+  .titulo {
+    padding-top: 2px;
+  }
+
+
+.uk-button{
+
+  background-color: #AC8030;
+  color: #ffffff
+}

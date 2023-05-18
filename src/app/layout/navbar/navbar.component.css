@@ -1,0 +1,21 @@
+.titulo {
+
+  margin:5%;
+
+}
+
+.row {
+  margin-bottom: 20px; /* Add space between rows */
+}
+
+.col {
+  /* Your column styles here */
+}
+
+
+.uk-text-color-white{
+
+  background-color: #AC8030;
+  color: #ffffff
+
+}
