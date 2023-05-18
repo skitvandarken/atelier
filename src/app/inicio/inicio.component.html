@@ -1,6 +1,14 @@
 <app-topbar></app-topbar>
 <app-navbar></app-navbar>
 
+    <!--Botão do WhatsApp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<a href="https://api.whatsapp.com/send?phone=244932220039&text=Oi%21%20gostaria%20de%20saber%20mais%20sobre%20sobre%20vossos%20produtos%20." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+<!--Título da página-->
 <div class="uk-container titulo" >
   <h1 class="uk-heading-divider" style="font-family:'Calibri', sans-serif; color: #AC8030;">ATELIER MUNDO GLAMOUR</h1>
 </div>
@@ -13,74 +21,78 @@
               <div class="uk-card-media-top">
                   <img class="uk-border-rounded" src="assets/ajustamento_mundoglamour_wide.png" width="700px" height="300px" alt="">
               </div>
-              <div class="uk-card-body">
+              <div class="uk-card-body" style="background-image: url('assets/bg-card.jpg'); background-size:contain; background-repeat:no-repeat; background-position: center center" >
                   <h3 class="uk-text-center">
 <!-- 1 - Modal ALrgamento -->
-<a href="#modal-example" uk-toggle>Alargamento</a>
-<div id="modal-example" uk-modal>
+<a href="#modal-alargamento" uk-toggle> <span uk-icon="icon: expand"> </span>Alargamento</a>
+<div id="modal-alargamento" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <img src="">
-        <h2 class="uk-modal-title">Alargamento</h2>
+       <!-- <img src=""> -->
+        <h2 class="uk-modal-title uk-text-center"><span uk-icon="icon: expand; ratio: 3"></span>Alargamento</h2>
         <p>Neste serviço o Mundo Glamour faz alargamento de qualquer peça de roupa seja ela completa ou
           por partes, de acordo com o desejo do cliente.
           Exemplo de Alargamento:
           - Calça apertada, Vestido, Cintura, Blazer etc.</p>
         <p class="uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button"><a href="assets\pdf\alargamento.pdf" target="_blank"></a>Preçário</button>
+           <img src="assets/precario/alargamento.jpg" alt="">
             <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
+
+
+
         </p>
     </div>
 </div><br>
-<!-- 1 - Modal ALrgamento -->
-<a href="#modal-example" uk-toggle>Ajustamento</a>
-<div id="modal-example" uk-modal>
+<!-- 1 - Modal Ajustamento -->
+<a href="#modal-ajustamento" uk-toggle> <span uk-icon="icon: shrink"></span> Ajustamento</a>
+<div id="modal-ajustamento" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Ajustamento</h2>
+        <h2 class="uk-modal-title uk-text-center"><span uk-icon="icon: shrink; ratio: 3"></span>Ajustamento</h2>
         <p>Neste servico o Mundo Glamour ajusta qualquer peca de roupa completa ou por partes, de acordo
           com o desejo do cliente.
-          <b>Exemplo de Ajustamento:</b>
+          <b><br>Exemplo de Ajustamento:</b>
           - Calça larga, Vestido, Cintura, Mangas de Blusas, Blazer, Camisas etc.</p>
         <p class="uk-text-right">
+          <img src="assets/precario/ajustamento.jpg" alt="">
             <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
         </p>
     </div>
 </div><br>
 <!-- 2 - Modal Rsstauração -->
-<a href="#modal-example2" uk-toggle>Restauração</a>
-<div id="modal-example2" uk-modal>
+<a href="#modal-restauracao" uk-toggle><span uk-icon="icon: refresh"></span> Restauração</a>
+<div id="modal-restauracao" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Restauração</h2>
+        <h2 class="uk-modal-title uk-text-center"><span uk-icon="icon: refresh; ratio: 3"></span>Restauração</h2>
         <p>Neste serviço o Mundo Glamour restaura qualquer peca de roupa completa ou por partes, de
           acordo com o desejo do cliente.
-          Exemplo de Restauração:
+          <br><b>Exemplo de Restauração:</b>
           - Calças rasgadas ou desmachadas, Vestido, Blazer etc.
           - Conserto de feichos, botões etc.
           - Costura de bainha, decote etc.
           - Calça larga, Vestido, Cintura, Mandgas de Blusas, Blazer ou Camisas</p>
         <p class="uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Preçário</button>
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
+          <img src="assets/precario/restauracao.jpg" alt="">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
         </p>
     </div>
 </div><br>
 <!-- 3 - Modal Rsstauração -->
-<a href="#modal-example2" uk-toggle>Transformação</a>
-<div id="modal-example2" uk-modal>
+<a href="#modal-confeccao" uk-toggle><span uk-icon="icon: settings"></span> Transformação</a>
+<div id="modal-confeccao" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Transformação</h2>
+        <h2 class="uk-modal-title uk-text-center"><span uk-icon="icon: settings; ratio: 3"></span>  Transformação</h2>
         <p>Neste serviço o Mundo Glamour Tranforma qualquer peça de roupa completa ou por partes, de
           acordo com o desejo do cliente.
-          Exemplo de Transformação:
+         <br><b> Exemplo de Transformação: </b>
           - Transformamos Saia em Calça, Fato de Calça e Blazer em Fato Macação, Calça em Calçao
           etc.</p>
         <p class="uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Preçário</button>
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
+          <img src="assets/precario/cofeccao.jpg" alt="">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
         </p>
     </div>
 </div><br>
-<!-- 4 - Modal Rsstauração -->
-<a href="#modal-example3" uk-toggle>Criação de Roupas</a>
+<!-- 4 - Modal Restauração
+<a href="#modal-example3" uk-toggle> <span uk-icon="icon: pencil"></span> Criação de Roupas</a>
 <div id="modal-example3" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
       <p><span uk-icon="icon: pencil"></span></p><h2 class="uk-modal-title">Criação de Roupas</h2>
@@ -101,12 +113,12 @@
             <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
         </p>
     </div>
-</div><br>
+</div><br>  -->
 <!-- 4 - Modal Medidas ao Domicílio -->
-<a href="#modal-example4" uk-toggle><span uk-icon="icon: minus"></span>   Medidas ao domicílio</a>
+<a href="#modal-example4" uk-toggle><span uk-icon="icon: bookmark"></span>   Medidas ao domicílio</a>
 <div id="modal-example4" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title"><span uk-icon="icon: minus"></span>   Medidas ao domicílio</h2>
+        <h2 class="uk-modal-title"><span uk-icon="icon: bookmark"></span>   Medidas ao domicílio</h2>
         <p>TesteLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p class="uk-text-right">
             <button class="uk-button uk-button-default uk-modal-close" type="button">Preçário</button>
@@ -115,10 +127,10 @@
     </div>
 </div><br>
 <!-- 5 - Modal Medidas ao Domicílio -->
-<a href="#modal-example5" uk-toggle><span uk-icon="icon: bag"></span>Entregas ao domicílio</a>
+<a href="#modal-example5" uk-toggle><span uk-icon="icon: bag"></span>  Entregas ao domicílio</a>
 <div id="modal-example5" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title"><span uk-icon="icon: bag"></span>Entregas ao domicílio</h2>
+        <h2 class="uk-modal-title uk-text-center"><span uk-icon="icon: bag; ratio: 3"></span>  Entregas ao domicílio</h2>
         <p>TesteLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p class="uk-text-right">
             <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
@@ -139,25 +151,32 @@
                     Alem dos serviços mencionados, também promovermos a marca de roupa “Mundo Glamour”, e marcas de roupa de Desenhadores Sócios Internacionais</p>
                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
                   <!-- Slider-->
-                  <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+
+                  <div class="uk-text">
+                  <h2 class="uk-heading" style="color:black">Nossas Colecções</h2>
+                </div>
+
+                  <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m">
                       <li>
-                          <a><img src="assets/colect1.jpg" width="400" height="600" alt=""></a>
+                          <a routerLink="/checkout"><img src="assets/colect1.jpg" width="400" height="600" alt=""></a>
                           <div class="uk-position-bottom uk-panel">
                           </div>
-                          <div class="uk-heading">
-                            <p style="color:black" >Colecção Jacquard Lovers</p>
-                          </div>
+                            <p style="color:black" > Lovers</p>
                       </li>
                       <li>
-                          <a><img src="assets/colect2.jpg" width="400" height="600" alt=""></a>
+                          <a routerLink="/checkout"><img src="assets/perola.jpg" width="400" height="600" alt=""></a>
                           <div class="uk-position-center uk-panel"></div>
+                          <p class="uk-text uk-text-center" style="color:black" >Pérola</p>
+
                       </li>
                       <li>
-                          <a><img src="assets/colect3.jpg" width="400" height="600" alt=""></a>
+                          <a routerLink="/checkout"><img src="assets/colect4.jpg" width="400" height="600" alt=""></a>
                           <div class="uk-position-center uk-panel"></div>
+                          <p class="uk-text uk-text-center" style="color:black" >Anjo</p>
+
                       </li>
                       <li>
-                          <a href=""> <img src="assets/colect4.jpg" width="400" height="600" alt=""></a>
+                          <a href=""> <img src="assets/colect2.jpg" width="400" height="600" alt=""></a>
                           <div class="uk-position-center uk-panel"></div>
                       </li>
                                         </ul>
@@ -174,11 +193,10 @@
 
   <div class="uk-container">
     <div class="botoes uk-button-group-large">
-      <button class=" uk-text-center uk-margin-right uk-button uk-button-large ">Fala connosco</button>
-      <button class=" uk-text-center uk-margin-left-large uk-button uk-button-large">Mais informações</button>
+      <button class=" uk-text-center uk-margin-right uk-button uk-button-large "><a style="color:inherit; text-decoration:none;" href="https://api.whatsapp.com/send?phone=244932220039&text=Oi%21%20gostaria%20de%20saber%20mais%20sobre%20sobre%20vossos%20produtos%20."> Fala connosco</a></button>
+      <button class=" uk-text-center uk-margin-left-large uk-button uk-button-large"><a style="color:inherit; text-decoration:none;" href="https://modamundoglamour.com/contacto">Mais informações</a></button>
     </div>
     </div>
 
 
 
-    <app-footer></app-footer>

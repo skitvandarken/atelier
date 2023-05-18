@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class InicioComponent {
 
+  showImageFlag: boolean = false;
+  imageSource: string = "assets/precario/alargamento.jpg";
+
+  toggleImageVisibility() {
+    this.showImageFlag = !this.showImageFlag;
+  }
+
 }
+
