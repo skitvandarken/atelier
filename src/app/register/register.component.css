@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.container>div{
+    padding: 30px;
+    margin: 20px;
+}
+.bloco1, .bloco2{
+    width: 40%;
+}
+.bloco1{
+    background: url('https://modamundoglamour.com/public/uploads/all/U9w9jZWYDQdehgqKhyCtDgOKJNbB4q4ljII9NIuu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.uk-input{
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.uk-input:hover, .uk-input:focus{
+    border-color: #AC8030;
+}
+button{
+    border-radius: 7px;
+    padding: 10px 5px;
+}
+.uk-button-default{
+    color: white;
+    width: 200px;
+    background-color: #AC8030;
+}
+.termos{
+    color: #AC8030;
+}
+.alternativa-login{
+    color: #ccc;
+    font-size:medium;
+}
+.redes-sociais a{
+    margin: 7px;
+}
