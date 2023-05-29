@@ -9,6 +9,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CollectionComponent } from './dashboard/collection/collection.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
 { path:'checkout', component: CheckoutComponent },
 { path:'navmenu', component: NavmenuComponent },
 { path:'login', component: LoginComponent },
-{ path:'register', component: RegisterComponent }
+{ path:'register', component: RegisterComponent },
+{ path:'dashboard', component: CollectionComponent }
 ];
 
 @NgModule({

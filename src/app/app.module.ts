@@ -13,6 +13,9 @@ import { TopbarComponent } from './layout/topbar/topbar.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboardtopComponent } from './dashboard/layout/dashboardtop/dashboardtop.component';
+import { DashboardsideComponent } from './dashboard/layout/dashboardside/dashboardside.component';
+import { CollectionComponent } from './dashboard/collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { RegisterComponent } from './register/register.component';
     TopbarComponent,
     NavmenuComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardtopComponent,
+    DashboardsideComponent,
+    CollectionComponent
   ],
   imports: [
     BrowserModule,
