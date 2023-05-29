@@ -12,7 +12,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { TopbarComponent } from './layout/topbar/topbar.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { LoginComponent } from './login/login.component';
-import { AdminComponent } from './admin/admin.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { AdminComponent } from './admin/admin.component';
     TopbarComponent,
     NavmenuComponent,
     LoginComponent,
-    AdminComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

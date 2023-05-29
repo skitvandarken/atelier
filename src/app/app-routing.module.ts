@@ -8,7 +8,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { LoginComponent } from './login/login.component';
-import { AdminComponent } from './admin/admin.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -20,7 +20,7 @@ const routes: Routes = [
 { path:'checkout', component: CheckoutComponent },
 { path:'navmenu', component: NavmenuComponent },
 { path:'login', component: LoginComponent },
-{ path: 'admin', component: AdminComponent }
+{ path:'register', component: RegisterComponent }
 ];
 
 @NgModule({
