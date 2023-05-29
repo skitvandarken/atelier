@@ -11,6 +11,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { TopbarComponent } from './layout/topbar/topbar.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { NavmenuComponent } from './navmenu/navmenu.component';
     FooterComponent,
     CheckoutComponent,
     TopbarComponent,
-    NavmenuComponent
+    NavmenuComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

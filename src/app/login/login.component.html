@@ -1,0 +1,45 @@
+<!-- Componentes-->
+<app-topbar></app-topbar>
+<app-navbar></app-navbar>
+<!-- Dependecia-->
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+
+<div class="container">
+    <div class="bloco1" data-src="assets/imagem.jpg" uk-img>…</div>
+    <div class="bloco2">
+        <h1>Faça o Login</h1>
+        <br>
+        <form action="" method="post">
+            <div>
+                <label for="email">E-mail</label>
+                <input class="uk-input" type="email" name="" id="" placeholder="Endereço eletrónico">
+            </div>
+            <br>
+            <div>
+                <label for="senha">Senha</label>
+                <input class="uk-input" type="password" name="" id="" placeholder="Palavra-passe">
+                <p align="right"><a class="forget-password" href="#">Esqueci a senha!</a></p>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="uk-button uk-button-default uk-width-medium">LOGIN</button>
+            </div>
+        </form>
+        <br>
+        <div>
+            <div class="alternativa-login">
+                <p>ou, Faça o login com</p>
+                <hr role="separator" aria-orientation="horizontal" class="v-divider theme--light">
+            </div>
+            <div class="redes-sociais">
+                    <a href=""><img src="assets/sociais/facebook.svg" alt=""></a>
+                    <a href=""><img src="assets/sociais/twitter.svg" alt=""></a>
+                    <a href=""><img src="assets/sociais/google.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
