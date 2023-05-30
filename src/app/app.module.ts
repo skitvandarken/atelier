@@ -16,6 +16,10 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardtopComponent } from './dashboard/layout/dashboardtop/dashboardtop.component';
 import { DashboardsideComponent } from './dashboard/layout/dashboardside/dashboardside.component';
 import { CollectionComponent } from './dashboard/collection/collection.component';
+import { MainComponent } from './dashboard/main/main.component';
+import { SettingsComponent } from './dashboard/settings/settings.component';
+import { ClientsComponent } from './dashboard/clients/clients.component';
+import { StaffsComponent } from './dashboard/staffs/staffs.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { CollectionComponent } from './dashboard/collection/collection.component
     RegisterComponent,
     DashboardtopComponent,
     DashboardsideComponent,
-    CollectionComponent
+    CollectionComponent,
+    MainComponent,
+    SettingsComponent,
+    ClientsComponent,
+    StaffsComponent
   ],
   imports: [
     BrowserModule,

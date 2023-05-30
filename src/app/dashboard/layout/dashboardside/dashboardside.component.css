@@ -1,3 +1,13 @@
 .uk-card-body{
+    color: white;
     height: 800px;
+    width: 20%;
+    display: inline-block;
+}
+.uk-card-body *{
+    color: white;
+}
+.uk-nav-default li:hover{
+    background-color: #3f3f3f;
+    color: #ffc402;
 }
