@@ -13,16 +13,19 @@
     <div class="bloco2">
         <h3 class="uk-text-muted">FAÇA O LOGIN</h3>
         <br>
-        <form action="" method="post">
+        <form [formGroup]="form" (submit)="submeter()" action="" method="post">
             <div>
                 <label for="email">E-mail</label>
-                <input class="uk-input" type="email" name="" id="" placeholder="Endereço electrónico">
+                <input formControlName="email" class="uk-input" type="email" name="" id="" placeholder="Endereço electrónico">
             </div>
             <br>
             <div>
                 <label for="senha">Senha</label>
-                <input class="uk-input" type="password" name="" id="" placeholder="Palavra-passe">
+                <input formControlName="senha" class="uk-input" type="password" name="" id="" placeholder="Palavra-passe">
                 <p align="right"><a class="forget-password" href="#">Esqueci a senha!</a></p>
+            </div>
+            <div *ngIf="sms is not null">
+                <div class="sms-erro">{{sms}}</div>
             </div>
             <br>
             <div>

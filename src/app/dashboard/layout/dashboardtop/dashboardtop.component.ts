@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-dashboardtop',
   templateUrl: './dashboardtop.component.html',
   styleUrls: ['./dashboardtop.component.css']
 })
-export class DashboardtopComponent {
+export class DashboardtopComponent implements OnInit {
+  message = ""
+  
+  constructor (private authservice: AuthService){}
+
+  ngOnInit(): void {
+     this.authservice.user().subscribe({
+      next: (res:any) => { this.message = `${res.nome_completo}`
+    },
+    error : () =>{
+        this.message = "fsdfd"
+    }
+     }
+      
+  )}
 
 }

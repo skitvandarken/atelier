@@ -16,6 +16,9 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardtopComponent } from './dashboard/layout/dashboardtop/dashboardtop.component';
 import { DashboardsideComponent } from './dashboard/layout/dashboardside/dashboardside.component';
 import { CollectionComponent } from './dashboard/collection/collection.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http"
+import { AuthInterceptor } from './intercetors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -36,9 +39,17 @@ import { CollectionComponent } from './dashboard/collection/collection.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi:true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

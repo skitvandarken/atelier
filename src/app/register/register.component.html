@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- Componentes-->
 <app-topbar></app-topbar>
 <app-navbar></app-navbar>
@@ -13,28 +14,33 @@
     <div class="bloco2">
         <h3 class="uk-text-muted">BEM-VINDO AO CADASTRO DE USUÁRIO</h3>
         <br>
-        <form action="" method="post">
+        <form [formGroup]="form"  (submit)="Submeter()" action="" method="post">
+            
             <div>
                 <label for="nome_completo">Nome completo</label>
-                <input class="uk-input" type="nome_completo" name="" id="" placeholder="Nome completo">
+                <input formControlName="nome_completo" class="uk-input" type="nome_completo" name="" id="" placeholder="Nome completo">
             </div>
             <br>
             <div>
                 <label for="email">E-mail</label>
-                <input class="uk-input" type="email" name="" id="" placeholder="Endereço electrónico">
+                <input formControlName="email" class="uk-input" type="email" name="" id="" placeholder="Endereço electrónico">
             </div>
             <br>
             <div>
                 <label for="senha">Senha</label>
-                <input class="uk-input" type="password" name="" id="" placeholder="Palavra-passe">
+                <input formControlName="senha" class="uk-input" type="password" name="" id="" placeholder="Palavra-passe">
             </div>
             <br>
             <div>
                 <label for="confirmar-senha">Confirmar senha</label>
-                <input class="uk-input" type="password" name="" id="" placeholder="Confirmar palavra-passe">
+                <input formControlName="palavra_passe" class="uk-input" type="password" name="" id="" placeholder="Confirmar palavra-passe">
             </div>
             <p>Ao se inscrever, você concorda com o nosso <a class="termos" href="#">Termos e condições</a></p>
             <br>
+            <div *ngIf="sms is not null">
+                <div class="sms-erro">{{sms}}</div>
+                <br>
+            </div>
             <div>
                 <button type="submit" class="uk-button uk-button-default uk-width-medium">CRIAR CONTA</button>
             </div>

@@ -44,3 +44,11 @@ button{
 .redes-sociais a{
     margin: 7px;
 }
+.sms-erro{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: red;
+    text-align: center;
+}
