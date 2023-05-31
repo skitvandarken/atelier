@@ -1,0 +1,94 @@
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+
+<!-- Area Total -->
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid uk-grid-collapse">
+        <!-- Area da sidebar -->
+        <app-dashboardside></app-dashboardside>
+        <!-- Area da navbar e conteudo -->
+        <div class="uk-width-expand@m">
+            <!-- Navbar -->
+            <app-dashboardtop></app-dashboardtop>
+            <!-- Conteudo -->
+            <div class="uk-padding">
+                <div style="display: flex;justify-content: space-between; align-items: center;">
+                    <h1 class="uk-padding-small">Todas as coleções</h1>
+                    <a href="dashboard/collections/create" class="uk-button uk-button-default uk-text-bolder uk-padding-small borda-arredondada">
+                        Adicionar nova coleção
+                    </a>
+                </div>
+                <div class="area-tabela">
+                    <h2 class="uk-padding-small">Coleções</h2>
+                    <div class="uk-padding-small area-tabela">
+                        <table class="uk-table uk-table-justify uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th class=""> # </th>
+                                    <th>Nome</th>
+                                    <th class="uk-visible@m">Imagem 1</th>
+                                    <th class="uk-visible@m">Imagem 2</th>
+                                    <th class="uk-visible@m">Imagem 3</th>
+                                    <th>Opções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #informacao1">+</button>
+                                        <span class="uk-padding-small">Nome collection 1</span>
+                                        <div id="informacao1" style="width: 300px;" class="uk-padding-small" hidden>
+                                            <p>Descrição:</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum velit quis tellus aliquam, eu mattis tortor pellentesque. Sed auctor malesuada urna, eget ultrices felis. Sed eleifend commodo mi, vel auctor risus tristique in. Integer sollicitudin diam quis velit lobortis, ut tristique ligula tincidunt.</p>
+                                        </div>
+                                    </td>
+                                    <td class="uk-visible@m">
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                    </td>
+                                    <td class="uk-visible@m">
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                    </td>
+                                    <td class="uk-visible@m">
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                    </td>
+                                    <td>
+                                        <span class="uk-margin-medium-right" uk-icon="icon: file-edit"></span>
+                                        <span class="uk-margin-medium-right" uk-icon="icon: trash"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #informacao2">+</button>
+                                        <span class="uk-padding-small">Nome collection 2</span>
+                                        <div id="informacao2" style="width: 300px;" class="uk-padding-small" hidden>
+                                            <p>Descrição:</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum velit quis tellus aliquam, eu mattis tortor pellentesque. Sed auctor malesuada urna, eget ultrices felis. Sed eleifend commodo mi, vel auctor risus tristique in. Integer sollicitudin diam quis velit lobortis, ut tristique ligula tincidunt.</p>
+                                        </div>
+                                    </td>
+                                    <td class="uk-visible@m">
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                    </td>
+                                    <td class="uk-visible@m">
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                    </td>
+                                    <td class="uk-visible@m">
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                    </td>
+                                    <td>
+                                        <span class="uk-margin-medium-right" uk-icon="icon: file-edit"></span>
+                                        <span class="uk-margin-medium-right" uk-icon="icon: trash"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

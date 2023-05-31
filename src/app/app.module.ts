@@ -15,11 +15,18 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardtopComponent } from './dashboard/layout/dashboardtop/dashboardtop.component';
 import { DashboardsideComponent } from './dashboard/layout/dashboardside/dashboardside.component';
-import { CollectionComponent } from './dashboard/collection/collection.component';
 import { MainComponent } from './dashboard/main/main.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
 import { ClientsComponent } from './dashboard/clients/clients.component';
-import { StaffsComponent } from './dashboard/staffs/staffs.component';
+import { ProductsComponent } from './dashboard/product/products/products.component';
+import { CategoryComponent } from './dashboard/product/category/category.component';
+import { StaffsComponent } from './dashboard/staff/staffs/staffs.component';
+import { CreateproductsComponent } from './dashboard/product/createproducts/createproducts.component';
+import { CreatestaffsComponent } from './dashboard/staff/createstaffs/createstaffs.component';
+import { CreatecollectionsComponent } from './dashboard/collection/createcollections/createcollections.component';
+import { CollectionsComponent } from './dashboard/collection/collections/collections.component';
+import { PendingordersComponent } from './dashboard/order/pendingorders/pendingorders.component';
+import { OrdersdeliveredComponent } from './dashboard/order/ordersdelivered/ordersdelivered.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +43,18 @@ import { StaffsComponent } from './dashboard/staffs/staffs.component';
     RegisterComponent,
     DashboardtopComponent,
     DashboardsideComponent,
-    CollectionComponent,
     MainComponent,
     SettingsComponent,
     ClientsComponent,
-    StaffsComponent
+    ProductsComponent,
+    CategoryComponent,
+    StaffsComponent,
+    CreateproductsComponent,
+    CreatestaffsComponent,
+    CreatecollectionsComponent,
+    CollectionsComponent,
+    PendingordersComponent,
+    OrdersdeliveredComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,25 @@
-.uk-card-body{
-    color: white;
+.uk-background-secondary{
+    width: 270px;
+
     height: 800px;
-    width: 20%;
-    display: inline-block;
 }
-.uk-card-body *{
-    color: white;
+.uk-container-expand{
+    padding: 0px;
 }
-.uk-nav-default li:hover{
-    background-color: #3f3f3f;
-    color: #ffc402;
+
+.borda-arredondada{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media screen and (max-width:1020px) {
+    .sobrepor{
+        position: absolute;
+        z-index: 1;
+    }
+    .esconder-medio{
+        display: none;
+    }
+    .exibir-medio{
+        display: block;
+    }
 }

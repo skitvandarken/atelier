@@ -1,6 +1,3 @@
-.settings{
-    display: inline-table;
-    position: absolute;
-    top: 20%;
-    width: 80%;
+.uk-container-expand{
+    padding: 0px;
 }

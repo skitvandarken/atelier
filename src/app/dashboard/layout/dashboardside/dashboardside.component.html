@@ -1,35 +1,42 @@
-<div class="uk-card uk-card-default uk-card-body uk-background-secondary" id="sidebar">
-    <ul class="uk-nav-default" uk-nav>
-        <li class="uk-nav-header uk-padding-medium uk-margin-large">
-            <a href="#">
-                <img src="assets/logomundoglamour.png" width="250px" alt="">
-            </a>
-        </li>
-        <li><a href="dashboard/"><h3><span class="uk-margin-medium-right" uk-icon="icon: home"></span> Início</h3></a></li>
-        <li class="uk-parent">
-            <a href="#"><h3><span class="uk-margin-medium-right" uk-icon="icon: bag"></span>Produtos </h3><span uk-nav-parent-icon></span></a>
-            <ul class="uk-nav-sub" style="list-style-type: circle;padding-left: 100px;">
-                <li><a href="#"><p>Categoria</p></a></li>
-                <li><a href="#"><p>Marcas</p></a></li>
-                <li><a href="#"><p>Atributos</p></a></li>
-            </ul>
-        </li>
-        <li class="uk-parent">
-            <a href="#"><h3><span class="uk-margin-medium-right" uk-icon="icon: tag"></span>Pedidos </h3><span uk-nav-parent-icon></span></a>
-            <ul class="uk-nav-sub" style="list-style-type: circle;padding-left: 100px;">
-                <li><a href="#"><p>Pendentes</p></a></li>
-                <li><a href="#"><p>Entregues</p></a></li>
-            </ul>
-        </li>
-        <li><a href="dashboard/collection"><h3><span class="uk-margin-medium-right" uk-icon="icon: thumbnails"></span> Coleções</h3></a></li>
-        <li><a href="dashboard/clients"><h3><span class="uk-margin-medium-right" uk-icon="icon: users"></span> Clientes</h3></a></li>
-        <li><a href="dashboard/settings"><h3><span class="uk-margin-medium-right" uk-icon="icon: cog"></span> Configurações</h3></a></li> 
-        <li class="uk-parent">
-            <a href="#"><h3><span class="uk-margin-medium-right" uk-icon="icon: users"></span>Equipe </h3><span uk-nav-parent-icon></span></a>
-            <ul class="uk-nav-sub" style="list-style-type: circle;padding-left: 100px;">
-                <li><a href="dashboard/staffs"><p>Todos os funcionários</p></a></li>
-                <li><a href="#"><p>Funções</p></a></li>
-            </ul>
-        </li>
-    </ul>
+<div class="uk-width-1-4@m sobrepor" id="sidebar">
+    <div class="uk-background-secondary uk-light uk-padding">
+        <ul class="uk-nav-default" uk-nav>
+            <li class="uk-nav-header uk-padding-medium uk-margin-large">
+                <div style="display: flex;justify-content: space-between; align-items: center;">
+                    <a href="#">
+                        <img src="assets/logomundoglamour.png" alt="">
+                    </a>
+                    <a uk-toggle="target: #sidebar; animation: uk-animation-slide-left" class="uk-hidden@s"><span  uk-icon="icon: menu;ratio:2" class="borda-arredondada uk-padding-small"></span></a>
+                </div>
+            </li>
+            <li><a href="dashboard/"><h3><span class="uk-margin-medium-right" uk-icon="icon: home"></span> Início</h3></a></li>
+            <li class="uk-parent">
+                <a href="#"><h3><span class="uk-margin-medium-right" uk-icon="icon: bag"></span>Produtos </h3><span uk-nav-parent-icon></span></a>
+                <ul class="uk-nav-sub" style="list-style-type: circle;padding-left: 100px;">
+                    <li><a href="dashboard/products"><p>Produtos</p></a></li>
+                    <li><a href="dashboard/categories"><p>Categoria</p></a></li>
+                    <li><a href="dashboard/brands"><p>Marcas</p></a></li>
+                    <li><a href="#"><p>Atributos</p></a></li>
+                    <li><a href="#"><p>Opinões</p></a></li>
+                </ul>
+            </li>
+            <li class="uk-parent">
+                <a href="#"><h3><span class="uk-margin-medium-right" uk-icon="icon: tag"></span>Pedidos </h3><span uk-nav-parent-icon></span></a>
+                <ul class="uk-nav-sub" style="list-style-type: circle;padding-left: 100px;">
+                    <li><a href="dashboard/orders/pedings"><p>Pendentes</p></a></li>
+                    <li><a href="dashboard/orders/delivered"><p>Entregues</p></a></li>
+                </ul>
+            </li>
+            <li><a href="dashboard/collections"><h3><span class="uk-margin-medium-right" uk-icon="icon: thumbnails"></span> Coleções</h3></a></li>
+            <li><a href="dashboard/clients"><h3><span class="uk-margin-medium-right" uk-icon="icon: users"></span> Clientes</h3></a></li>
+            <li><a href="dashboard/settings"><h3><span class="uk-margin-medium-right" uk-icon="icon: cog"></span> Configurações</h3></a></li> 
+            <li class="uk-parent">
+                <a href="#"><h3><span class="uk-margin-medium-right" uk-icon="icon: users"></span>Equipe </h3><span uk-nav-parent-icon></span></a>
+                <ul class="uk-nav-sub" style="list-style-type: circle;padding-left: 100px;">
+                    <li><a href="dashboard/staffs"><p>Todos os funcionários</p></a></li>
+                    <li><a href="#"><p>Funções</p></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>

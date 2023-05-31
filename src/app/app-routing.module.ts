@@ -10,10 +10,18 @@ import { NavmenuComponent } from './navmenu/navmenu.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './dashboard/main/main.component';
-import { CollectionComponent } from './dashboard/collection/collection.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
 import { ClientsComponent } from './dashboard/clients/clients.component';
-import { StaffsComponent } from './dashboard/staffs/staffs.component';
+import { ProductsComponent } from './dashboard/product/products/products.component';
+import { StaffsComponent } from './dashboard/staff/staffs/staffs.component';
+import { CreateproductsComponent } from './dashboard/product/createproducts/createproducts.component';
+import { CreatestaffsComponent } from './dashboard/staff/createstaffs/createstaffs.component';
+import { CollectionsComponent } from './dashboard/collection/collections/collections.component';
+import { CreatecollectionsComponent } from './dashboard/collection/createcollections/createcollections.component';
+import { CategoryComponent } from './dashboard/product/category/category.component';
+import { PendingordersComponent } from './dashboard/order/pendingorders/pendingorders.component';
+import { OrdersdeliveredComponent } from './dashboard/order/ordersdelivered/ordersdelivered.component';
+
 
 
 const routes: Routes = [
@@ -27,10 +35,17 @@ const routes: Routes = [
 { path:'login', component: LoginComponent },
 { path:'register', component: RegisterComponent },
 { path:'dashboard', component: MainComponent },
-{ path:'dashboard/collection', component: CollectionComponent },
 { path:'dashboard/clients', component: ClientsComponent },
+{ path:'dashboard/collections', component: CollectionsComponent },
+{ path:'dashboard/collections/create', component: CreatecollectionsComponent },
 { path:'dashboard/settings', component: SettingsComponent },
-{ path:'dashboard/staffs', component: StaffsComponent }
+{ path:'dashboard/staffs', component: StaffsComponent },
+{ path:'dashboard/staffs/create', component: CreatestaffsComponent },
+{ path:'dashboard/products', component: ProductsComponent },
+{ path:'dashboard/products/create', component: CreateproductsComponent },
+{ path:'dashboard/categories', component: CategoryComponent },
+{ path:'dashboard/orders/pedings', component: PendingordersComponent },
+{ path:'dashboard/orders/delivered', component: OrdersdeliveredComponent }
 ];
 
 @NgModule({
