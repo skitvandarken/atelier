@@ -1,23 +1,32 @@
-<nav class="uk-navbar-container uk-navbar-transparent">
-    <div uk-navbar>
-      <div class="uk-navbar-center uk-navbar-transparent">
-  
-      <div class="uk-navbar-item uk-logo">
-        <a href="https://modamundoglamour.com/"> <img src="assets/logo_branco_oficial.png" width="auto" height="200px" alt=""></a>
-      </div>
-  
-      </div>
-      </div>
-  </nav>
-
-<nav class="uk-navbar-container">
+<nav class="uk-navbar-container" uk-dropnav="mode: click">
     <div class="uk-container">
         <div uk-navbar>
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Dashboard</a>
+                <a uk-toggle="target: #sidebar; animation: uk-animation-slide-left" class="uk-navbar-item"><span  uk-icon="icon: menu;ratio:2" class="borda-arredondada uk-padding-small"></span></a>
                 <ul class="uk-navbar-nav">
-                    <!--<li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-active">
+                        <a href="#">
+                            <button class="uk-button uk-button-default uk-padding-small borda-arredondada">
+                                <span uk-icon="icon: world"></span> Pesquisar website
+                            </button>
+                        </a>
+                    </li>
+
                     <li>
+                        <a href="#">
+                            <button class="uk-button uk-button-default uk-padding-small borda-arredondada">
+                                <span uk-icon="icon:plus"></span> Adicionar novo
+                            </button>
+                        </a>
+                        <div class="uk-dropdown">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#"> Adicionar novo produto</a></li>
+                                <li><a href="#">Adicionar novo cliente</a></li>
+                                <li><a href="#">Adicionar nova equipa</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--<li>
                         <a href="#">Parent</a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -33,22 +42,54 @@
             </div>
 
             <div class="uk-navbar-right">
-
+<!--
                 <ul class="uk-navbar-nav">
                     <li class="uk-active"><a href="#"><img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/></a></li>
                     <li>
                         <a href="#"></a>
-                        <!--<div class="uk-navbar-dropdown">
+                        <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
                                 <li><a href="#">Item</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-                        </div>-->
+                        </div>
                     </li>
                     <li><a href="" class="uk-text-danger">Logout</a></li>
+                </ul>-->
+                <ul class="uk-subnav">
+                    <li>
+                        <a href="#">
+                            <button class="uk-button uk-button-default uk-padding-small borda-arredondada">
+                                <span uk-drop-parent-icon></span>Português
+                            </button>
+                        </a>
+                        <div class="uk-dropdown">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Inglês</a></li>
+                                <li><a href="#">Francês</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="container-user" style="padding-top: 30px;">
+                                <div style="display: inline-table;">
+                                    <p> <b class="uk-text-secondary">Usuário</b> <br> <small> admin </small></p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="uk-dropdown">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Perfil</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="75px" alt=''/>
+                    </li>
                 </ul>
-
             </div>
 
         </div>

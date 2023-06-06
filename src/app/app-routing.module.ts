@@ -9,7 +9,12 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MainComponent } from './dashboard/main/main.component';
 import { CollectionComponent } from './dashboard/collection/collection.component';
+import { SettingsComponent } from './dashboard/settings/settings.component';
+import { ClientsComponent } from './dashboard/clients/clients.component';
+import { StaffsComponent } from './dashboard/staffs/staffs.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 
 const routes: Routes = [
@@ -18,11 +23,17 @@ const routes: Routes = [
 { path: 'coleccoes', component: ColeccoesComponent  },
 { path: 'footer', component: FooterComponent },
 { path: 'navbar', component: NavbarComponent },
-{ path:'checkout', component: CheckoutComponent },
+{ path:'checkout/:name', component: CheckoutComponent },
 { path:'navmenu', component: NavmenuComponent },
 { path:'login', component: LoginComponent },
 { path:'register', component: RegisterComponent },
-{ path:'dashboard', component: CollectionComponent }
+{ path:'dashboard', component: MainComponent },
+{ path:'dashboard/collection', component: CollectionComponent },
+{ path:'dashboard/clients', component: ClientsComponent },
+{ path:'dashboard/settings', component: SettingsComponent },
+{ path:'dashboard/staffs', component: StaffsComponent },
+{path: 'produtos', component:ProdutosComponent},
+
 ];
 
 @NgModule({

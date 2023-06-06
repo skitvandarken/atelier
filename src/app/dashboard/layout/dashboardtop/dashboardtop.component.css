@@ -1,0 +1,14 @@
+.uk-navbar-container{
+    display: inline-block;
+    position: absolute;
+    width: 80%;
+    box-shadow: 10px 0px 10px #ccc;
+}
+.container-user div{
+    display: inline-block;
+    margin-right: 20px;
+}
+.borda-arredondada{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

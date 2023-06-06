@@ -10,30 +10,7 @@
 </div>
 </div>
 
-<div class="uk-container">
-<div class="uk-position-relative" uk-slideshow="animation: fade">
-
-  <ul class="uk-slideshow-items">
-      <li>
-          <img src="assets/300x300.png" alt="" uk-cover>
-      </li>
-      <li>
-          <img src="assets/300x300.png" alt="" uk-cover>
-      </li>
-      <li>
-          <img src="assets/300x300.png" alt="" uk-cover>
-      </li>
-  </ul>
-
-  <div class="uk-position-bottom-center uk-position-small">
-      <ul class="uk-thumbnav">
-          <li uk-slideshow-item="0"><a href="#"><img src="assets/300x300.png" width="100" height="67" alt=""></a></li>
-          <li uk-slideshow-item="1"><a href="#"><img src="assets/300x300.png" width="100" height="67" alt=""></a></li>
-          <li uk-slideshow-item="2"><a href="#"><img src="assets/300x300.png" width="100" height="67" alt=""></a></li>
-      </ul>
-  </div>
-</div>
-</div>
+<!-- COMPONENTE SLIDER-->
 <div class="uk-container titulo">
 <form class="uk-form-stacked">
   <div class="uk-margin">
@@ -51,18 +28,25 @@
   </div>
 
   <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-telefone"><h3>Telefone</h3></label>
+    <div class="uk-form-controls">
+      <input class="uk-input" id="form-stacked-telefone" type="tel" placeholder="(+244) xxx xxx xxx">
+    </div>
+  </div>
+
+  <div class="uk-margin">
       <label class="uk-form-label" for="form-stacked-select"><h3>Medida por idade</h3></label>
       <div class="uk-form-controls">
-          <select class="uk-select" id="form-stacked-select">
+          <select (change)="idade($event)" class="uk-select" id="form-stacked-select">
               <option>Selecione uma idade</option>
-              <option>18 anos</option>
-              <option>19 anos</option>
-              <option>20 anos</option>
-              <option>21 anos</option>
-              <option>22 anos</option>
-              <option>23 anos</option>
-              <option>24 anos</option>
-              <option>25 anos ou mais</option>
+              <option value="18 anos">18 anos</option>
+              <option value="19 anos">19 anos</option>
+              <option value="20 anos">20 anos</option>
+              <option value="21 anos">21 anos</option>
+              <option value="22 anos">22 anos</option>
+              <option value="23 anos">23 anos</option>
+              <option value="24 anos">24 anos</option>
+              <option value="25 anos ou mais">25 anos ou mais</option>
           </select>
       </div>
   </div>
@@ -74,7 +58,7 @@
               <span uk-icon="icon: cloud-upload"></span>
               <span class="uk-text-middle">Arraste e solte ou</span>
               <div uk-form-custom>
-                  <input type="file">
+                  <input (change)="compr($event)" type="file">
                   <span class="uk-link">selecione um arquivo</span>
               </div>
           </div>
@@ -84,12 +68,12 @@
   <div class="uk-margin">
       <label class="uk-form-label" for="form-stacked-textarea"><h3>Requisitos</h3></label>
       <div class="uk-form-controls">
-          <textarea class="uk-textarea" id="form-stacked-textarea" rows="5" placeholder="Digite aqui os seus requisitos"></textarea>
+          <textarea  (change)="requ($event)" class="uk-textarea" id="form-stacked-textarea" rows="5" placeholder="Digite aqui os seus requisitos"></textarea>
       </div>
   </div>
-
+  
   <div class="uk-margin" style="margin-bottom:10%">
-      <button class="uk-button uk-button-primary" type="submit">Fazer pedido</button>
+      <button class="uk-button uk-button-primary" (click)="enviar()" type="submit">Fazer pedido</button>
   </div>
 </form>
 </div>
