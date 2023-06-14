@@ -15,14 +15,12 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardtopComponent } from './dashboard/layout/dashboardtop/dashboardtop.component';
 import { DashboardsideComponent } from './dashboard/layout/dashboardside/dashboardside.component';
-import { CollectionComponent } from './dashboard/collection/collection.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http"
 import { AuthInterceptor } from './intercetors/auth.interceptor';
 import { MainComponent } from './dashboard/main/main.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
 import { ClientsComponent } from './dashboard/clients/clients.component';
-import { StaffsComponent } from './dashboard/staffs/staffs.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
@@ -40,11 +38,9 @@ import { ProdutosComponent } from './produtos/produtos.component';
     RegisterComponent,
     DashboardtopComponent,
     DashboardsideComponent,
-    CollectionComponent,
     MainComponent,
     SettingsComponent,
     ClientsComponent,
-    StaffsComponent,
     ProdutosComponent,
   ],
   imports: [

@@ -1,0 +1,16 @@
+.uk-container-expand{
+    padding: 0px;
+}
+
+.remove-style{
+    list-style-type: none;
+}
+
+.area-tabela{
+    margin: auto; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.borda-arredondada{
+    border-radius: 10px;
+}

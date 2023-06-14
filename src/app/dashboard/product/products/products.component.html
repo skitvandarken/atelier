@@ -15,20 +15,18 @@
             <app-dashboardtop></app-dashboardtop>
             <!-- Conteudo -->
             <div class="uk-padding">
-                <h1>Todos os clientes</h1>
+                <h1 class="uk-padding-small">Todos os produtos</h1>
                 <div class="area-tabela">
-                    <div class="uk-padding-small" style="display: flex; justify-content: space-between; align-items: center;">
-                        <h2 class="uk-padding-small">Clientes</h2>
-                        <form action="" method="get">
-                            <input type="text" name="" id="" class="uk-input" placeholder="Pesquise por email ou nome">
-                        </form>
-                    </div>
-                    <div class="uk-padding area-tabela">
+                    <h2 class="uk-padding-small">Produtos</h2>
+                    <div class="uk-padding-small area-tabela">
                         <table class="uk-table uk-table-justify uk-table-divider">
                             <thead>
                                 <tr>
-                                    <th> # </th>
+                                    <th class=""> # </th>
                                     <th>Nome</th>
+                                    <th>Informação</th>
+                                    <th>Categoria</th>
+                                    <th>Marca</th>
                                     <th>Opções</th>
                                 </tr>
                             </thead>
@@ -36,14 +34,18 @@
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #informacao1">+</button>
-                                        <span class="uk-padding-small">Nome completo 1</span>
-                                        <div id="informacao1" class="uk-padding-small" hidden>
-                                            <p>Email: teste@gmail.com</p>
-                                            <p>Telefone: +244 900 000 000</p>
-                                            <p>Encomendas: 0</p>
-                                        </div>
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                        Nome produto 1
                                     </td>
+                                    <td>
+                                        <ul class="remove-style">
+                                            <li>Classificação:</li>
+                                            <li>Total vendido: </li>
+                                            <li>Preço:</li>
+                                        </ul>
+                                    </td>
+                                    <td>Categoria 1</td>
+                                    <td>Marca 1</td>
                                     <td>
                                         <span class="uk-margin-medium-right" uk-icon="icon: file-edit"></span>
                                         <span class="uk-margin-medium-right" uk-icon="icon: trash"></span>
@@ -52,14 +54,18 @@
                                 <tr>
                                     <td>2</td>
                                     <td>
-                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #informacao2">+</button>
-                                        <span class="uk-padding-small">Nome completo 2</span>
-                                        <div id="informacao2" class="uk-padding-small" hidden>
-                                            <p>Email: teste@gmail.com</p>
-                                            <p>Telefone: +244 900 000 000</p>
-                                            <p>Encomendas: 0</p>
-                                        </div>
+                                        <img src='https://dummyimage.com/50x50/000/fff.png?text=imagem%20de%20usuario' class="uk-border-circle uk-background-default" width="50px" alt=''/>
+                                        Nome produto 2
                                     </td>
+                                    <td>
+                                        <ul class="remove-style">
+                                            <li>Classificação:</li>
+                                            <li>Total vendido: </li>
+                                            <li>Preço:</li>
+                                        </ul>
+                                    </td>
+                                    <td>Categoria 2</td>
+                                    <td>Marca 2</td>
                                     <td>
                                         <span class="uk-margin-medium-right" uk-icon="icon: file-edit"></span>
                                         <span class="uk-margin-medium-right" uk-icon="icon: trash"></span>

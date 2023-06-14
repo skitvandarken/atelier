@@ -15,35 +15,33 @@
             <app-dashboardtop></app-dashboardtop>
             <!-- Conteudo -->
             <div class="uk-padding">
-                <h1>Todos os clientes</h1>
+                <div style="display: flex;justify-content: space-between; align-items: center;">
+                    <h1 class="uk-padding-small">Todos os funcionários</h1>
+                    <a href="dashboard/staffs/create" class="uk-button uk-button-default uk-text-bolder uk-padding-small borda-arredondada">
+                        Adicionar novo funcionário
+                    </a>
+                </div>
                 <div class="area-tabela">
-                    <div class="uk-padding-small" style="display: flex; justify-content: space-between; align-items: center;">
-                        <h2 class="uk-padding-small">Clientes</h2>
-                        <form action="" method="get">
-                            <input type="text" name="" id="" class="uk-input" placeholder="Pesquise por email ou nome">
-                        </form>
-                    </div>
+                    <h2 class="uk-padding-small">Equipas</h2>
                     <div class="uk-padding area-tabela">
                         <table class="uk-table uk-table-justify uk-table-divider">
                             <thead>
                                 <tr>
                                     <th> # </th>
                                     <th>Nome</th>
+                                    <th>E-mail</th>
+                                    <th>Telefone</th>
+                                    <th>Papel</th>
                                     <th>Opções</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>
-                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #informacao1">+</button>
-                                        <span class="uk-padding-small">Nome completo 1</span>
-                                        <div id="informacao1" class="uk-padding-small" hidden>
-                                            <p>Email: teste@gmail.com</p>
-                                            <p>Telefone: +244 900 000 000</p>
-                                            <p>Encomendas: 0</p>
-                                        </div>
-                                    </td>
+                                    <td>Nome completo 1</td>
+                                    <td>E-mail 1</td>
+                                    <td>Telefone 1</td>
+                                    <td>Papel 1</td>
                                     <td>
                                         <span class="uk-margin-medium-right" uk-icon="icon: file-edit"></span>
                                         <span class="uk-margin-medium-right" uk-icon="icon: trash"></span>
@@ -51,15 +49,10 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>
-                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #informacao2">+</button>
-                                        <span class="uk-padding-small">Nome completo 2</span>
-                                        <div id="informacao2" class="uk-padding-small" hidden>
-                                            <p>Email: teste@gmail.com</p>
-                                            <p>Telefone: +244 900 000 000</p>
-                                            <p>Encomendas: 0</p>
-                                        </div>
-                                    </td>
+                                    <td>Nome completo 2</td>
+                                    <td>E-mail 2</td>
+                                    <td>Telefone 2</td>
+                                    <td>Papel 2</td>
                                     <td>
                                         <span class="uk-margin-medium-right" uk-icon="icon: file-edit"></span>
                                         <span class="uk-margin-medium-right" uk-icon="icon: trash"></span>

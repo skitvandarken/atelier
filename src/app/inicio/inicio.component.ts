@@ -12,7 +12,6 @@ export class InicioComponent implements OnInit{
   
   produtos : any[] = [];
   imagem : any = "http://127.0.0.1:8000/api/atelier"
-  imagens = "ahha";
 
   constructor (private authservice:AuthService){
 
@@ -20,9 +19,7 @@ export class InicioComponent implements OnInit{
   ngOnInit(): void {  
     this.authservice.produtopegar().subscribe(
       (res:any) =>{
-        console.log(res),
-        this.produtos = res;
-        this.authservice.setmessage(res)
+        this.produtos = res
       }
     )
     

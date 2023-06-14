@@ -1,0 +1,63 @@
+.uk-container-expand{
+    padding: 0px;
+}
+
+.uk-input{
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.uk-input:hover, .uk-input:focus{
+    border-color: #AC8030;
+}
+
+.area-tabela{
+    margin: auto; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(15px);
+  }
+  

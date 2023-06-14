@@ -1,0 +1,55 @@
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+
+<!-- Area Total -->
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid uk-grid-collapse">
+        <!-- Area da sidebar -->
+        <app-dashboardside></app-dashboardside>
+        <!-- Area da navbar e conteudo -->
+        <div class="uk-width-expand@m">
+            <!-- Navbar -->
+            <app-dashboardtop></app-dashboardtop>
+            <!-- Conteudo -->
+            <div class="uk-padding uk-width-1-2" style="margin: auto;">
+                <h1>Cadastrar funcionários</h1>
+                <div style="margin: auto;">
+                    <div class="bloco2">
+                        <br>
+                        <form action="" method="post">
+                            <div>
+                                <label for="nome_completo">Nome completo</label>
+                                <input class="uk-input" type="nome_completo" name="" id="" placeholder="Nome completo">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input class="uk-input" type="email" name="" id="" placeholder="Endereço electrónico">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="telefone">Telefone</label>
+                                <input class="uk-input" type="password" name="" id="" placeholder="Número de telefone">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="papel">Papel</label>
+                                <select class="uk-select">
+                                    <option value="tipo1">Tipo usuário 1</option>
+                                    <option value="tipo2">Tipo usuário 2</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="submit" class="uk-button uk-button-default uk-width-medium">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

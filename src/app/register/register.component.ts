@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 
@@ -11,27 +11,46 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit{
   form!: FormGroup;
   sms = ""; 
-  constructor(private formbuilder: FormBuilder, private authservice: AuthService, private router: Router){
+  constructor(private authservice: AuthService, private router: Router){
 
   }
   ngOnInit(): void {
-    this.form = this.formbuilder.group({
-      nome_completo : "",
-      email : "",
-      senha : "",
-      palavra_passe: ""
+    this.form = new FormGroup({
+      nome_completo : new FormControl('', [Validators.required]),
+      email : new FormControl('', [Validators.required]),
+      senha : new FormControl('', [Validators.required]),
+      senha_confirmar : new FormControl(''),
     })
   }
 
+  get nome_completo (){
+    return this.form.get("nome_completo")!
+  }
+  get email (){
+    return this.form.get("email")!
+  }
+
+  get senha(){
+    return this.form.get("senha")!
+  }
+
   Submeter (){
-    this.authservice.register(this.form.getRawValue()).subscribe(
-      (res:any) =>{
+    if (this.form.invalid){
+      return;
+    }
+    const file = new FormData();
+    file.append("nome_completo", this.form.value["nome_completo"])
+    file.append("email", this.form.value["email"])
+    file.append("senha", this.form.value["senha"])
+    file.append("senha_confirmar", this.form.value["senha_confirmar"])
+
+    this.authservice.register(file).subscribe(
+      (res:any)=>{
         alert("Regisrto feito com sucesso !")
         this.router.navigate(["login"])
       },
-    (erro:any)=>{
+     (erro:any)=>{
       //alert(erro.detail);
-      console.log(erro)
       for (var key in erro) {
         if (Object.prototype.hasOwnProperty.call(erro, key)) {
             const element = erro[key];

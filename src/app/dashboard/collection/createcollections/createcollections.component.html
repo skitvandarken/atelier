@@ -1,0 +1,79 @@
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+
+<!-- Area Total -->
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid uk-grid-collapse">
+        <!-- Area da sidebar -->
+        <app-dashboardside></app-dashboardside>
+        <!-- Area da navbar e conteudo -->
+        <div class="uk-width-expand@m">
+            <!-- Navbar -->
+            <app-dashboardtop></app-dashboardtop>
+            <!-- Conteudo -->
+            <div class="uk-padding uk-width-1-2" style="margin: auto;">
+                <h1>Cadastrar coleção</h1>
+                <div style="margin: auto;">
+                    <div class="bloco2">
+                        <br>
+                        <form action="" method="post">
+                            <div>
+                                <label for="nome_colecao">Nome da coleção</label>
+                                <input class="uk-input" type="nome_colecao" name="" id="" placeholder="Nome da coleção">
+                            </div>
+                            <br>
+                            <div>
+                                <label class="" for="form-stacked-file">Carregar imagem 1</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-placeholder uk-text-center">
+                                        <span uk-icon="icon: cloud-upload"></span>
+                                        <span class="uk-text-middle">Arraste e solte ou </span>
+                                        <div uk-form-custom>
+                                            <input type="file">
+                                            <span class="uk-link">selecione uma imagem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <label class="" for="form-stacked-file">Carregar imagem 2</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-placeholder uk-text-center">
+                                        <span uk-icon="icon: cloud-upload"></span>
+                                        <span class="uk-text-middle">Arraste e solte ou </span>
+                                        <div uk-form-custom>
+                                            <input type="file">
+                                            <span class="uk-link">selecione uma imagem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <label class="" for="form-stacked-file">Carregar imagem 3</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-placeholder uk-text-center">
+                                        <span uk-icon="icon: cloud-upload"></span>
+                                        <span class="uk-text-middle">Arraste e solte ou </span>
+                                        <div uk-form-custom>
+                                            <input type="file">
+                                            <span class="uk-link">selecione uma imagem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="submit" class="uk-button uk-button-default uk-width-medium">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

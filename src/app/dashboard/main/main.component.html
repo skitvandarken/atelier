@@ -3,24 +3,95 @@
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
-<div class="">
-    <app-dashboardside></app-dashboardside>
-    <app-dashboardtop></app-dashboardtop>
-    <div class="main">
-        <h1>Main</h1>
-        <div class="uk-text-center conteudo" uk-grid>
-            <div class="uk-width-1-4">
-                <div class="uk-card uk-card-default uk-card-body">Total de Clientes</div>
+
+<!-- Area Total -->
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid uk-grid-collapse">
+        <!-- Area da sidebar -->
+        <app-dashboardside></app-dashboardside>
+        <!-- Area da navbar e conteudo -->
+        <div class="uk-width-expand@m">
+            <!-- Navbar -->
+            <app-dashboardtop></app-dashboardtop>
+            <!-- Conteudo -->
+            <div class="uk-padding">
+                <h1>Area principal</h1>
+                <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body azul">
+                            <p class="uk-text-bolder uk-text-secondary">Total de pedidos</p>
+                            <h2 class="uk-text-bolder uk-text-secondary">0</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body laranja">
+                            <p class="uk-text-bolder uk-text-secondary">Total de produtos</p>
+                            <h2 class="uk-text-bolder uk-text-secondary">0</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body verde">
+                            <p class="uk-text-bolder uk-text-secondary">Principais produtos</p>
+                            <h2 class="uk-text-bolder uk-text-secondary">0</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body vermelho">
+                            <p class="uk-text-bolder uk-text-secondary">Produtos pendentes </p>
+                            <h2 class="uk-text-bolder uk-text-secondary">0</h2>
+                        </div>
+                    </div>
+                </div>
+                <!---
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                    </div>
+                </div>-->
             </div>
-            <div class="uk-width-1-4">
-                <div class="uk-card uk-card-default uk-card-body">Total de Produtos</div>
+            <!--
+            <div class="uk-grid-match uk-child-width-1-4  uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <div class="uk-grid-column uk-grid-row-large uk-child-width-1-2 uk-text-center" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default">Teste</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">Teste</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">Teste</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">Teste</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="uk-width-1-4">
-                <div class="uk-card uk-card-default uk-card-body">Total de Pedidos</div>
-            </div>
-            <div class="uk-width-1-4">
-                <div class="uk-card uk-card-default uk-card-body">Total de Vendas</div>
-            </div>
+            -->
         </div>
     </div>
 </div>

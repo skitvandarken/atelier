@@ -2,6 +2,7 @@
 <!-- Componentes-->
 <app-topbar></app-topbar>
 <app-navbar></app-navbar>
+
 <!-- Dependecia-->
 <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
@@ -14,11 +15,17 @@
     <div class="bloco2">
         <h3 class="uk-text-muted">BEM-VINDO AO CADASTRO DE USUÁRIO</h3>
         <br>
-        <form [formGroup]="form"  (submit)="Submeter()" action="" method="post">
+        <form [formGroup]="form"  (submit)="Submeter()" #formDir="ngForm" method="post">
             
             <div>
                 <label for="nome_completo">Nome completo</label>
                 <input formControlName="nome_completo" class="uk-input" type="nome_completo" name="" id="" placeholder="Nome completo">
+            </div>
+            <br>
+            <div *ngIf="nome_completo.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="nome_completo.errors?.['required']">
+                    Este campo não pode estar vázio
+                </p>
             </div>
             <br>
             <div>
@@ -26,14 +33,25 @@
                 <input formControlName="email" class="uk-input" type="email" name="" id="" placeholder="Endereço electrónico">
             </div>
             <br>
+            <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="email.errors?.['required']">
+                    Este campo não pode estar vázio
+                </p>
+            </div>
+            <br>
             <div>
                 <label for="senha">Senha</label>
                 <input formControlName="senha" class="uk-input" type="password" name="" id="" placeholder="Palavra-passe">
             </div>
+            <div *ngIf="senha.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="senha.errors?.['required']">
+                    Este campo não pode estar vázio
+                </p>
+            </div>
             <br>
             <div>
                 <label for="confirmar-senha">Confirmar senha</label>
-                <input formControlName="palavra_passe" class="uk-input" type="password" name="" id="" placeholder="Confirmar palavra-passe">
+                <input formControlName="senha_confirmar" class="uk-input" type="password" name="" id="" placeholder="Confirmar palavra-passe">
             </div>
             <p>Ao se inscrever, você concorda com o nosso <a class="termos" href="#">Termos e condições</a></p>
             <br>
@@ -52,9 +70,9 @@
                 <hr role="separator" aria-orientation="horizontal" class="v-divider theme--light">
             </div>
             <div class="redes-sociais">
-                    <a href=""><img src="assets/sociais/facebook.svg" alt=""></a>
-                    <a href=""><img src="assets/sociais/twitter.svg" alt=""></a>
-                    <a href=""><img src="assets/sociais/google.svg" alt=""></a>
+                <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                <a href="" class="uk-icon-button" uk-icon="twitter"></a>
+                <a href="" class="uk-icon-button" uk-icon="google"></a>
             </div>
         </div>
     </div>

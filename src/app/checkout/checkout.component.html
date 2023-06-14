@@ -1,5 +1,6 @@
 <app-topbar></app-topbar>
 <app-navbar></app-navbar>
+
 <div class="uk-container titulo" >
   <h1 class="uk-heading-divider"><span>Fazer pedido de aluguel</span></h1>
 </div>
@@ -9,35 +10,78 @@
   <h3>Preencha o formulário, anexe o comprovativo de pagamento e aguarde nossa confirmação para receber sua encomenda.</h3>
 </div>
 </div>
+<div class="uk-container">
+  <div *ngFor="let dado of produtos" class="uk-position-relative" uk-slideshow="animation: fade">
+    
+    <ul *ngIf="dado.nome == pagarNome" class="uk-slideshow-items">
+        <li class="img">
+            <img src="{{imagem_http}}{{dado.imagem_2}}" alt="" uk-cover>
+            {{pegarImagem(dado.imagem_2)}}
+        </li>
+        <li>
+          <img src="{{imagem_http}}{{dado.imagem_1}}" alt="" uk-cover>
+        </li>
+        <li>
+          <img src="{{imagem_http}}{{dado.imagem_3}}" alt="" uk-cover>
+        </li>
+    </ul>
+    <div *ngIf="dado.nome == pagarNome" class="uk-position-bottom-center uk-position-small">
+        <ul  class="uk-thumbnav">
+            <li uk-slideshow-item="0"><a href="#"><img src="{{imagem_http}}{{dado.imagem_2}}" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="1"><a href="#"><img src="{{imagem_http}}{{dado.imagem_1}} " width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="2"><a href="#"><img src="{{imagem_http}}{{dado.imagem_3}}" width="100" height="67" alt=""></a></li>
+        </ul>
+    </div>
+    
+  </div>
+  </div>
 
 <!-- COMPONENTE SLIDER-->
 <div class="uk-container titulo">
-<form class="uk-form-stacked">
+<form [formGroup]="form" (submit)="submeter()"  #formDir="ngForm" class="uk-form-stacked">
   <div class="uk-margin">
       <label class="uk-form-label" for="form-stacked-text"><h3>Nome</h3></label>
       <div class="uk-form-controls">
-          <input class="uk-input" id="form-stacked-text" type="text" placeholder="Seu nome completo">
+          <input formControlName="nome" class="uk-input" id="form-stacked-text" type="text" placeholder="Seu nome completo">
       </div>
   </div>
+
+  <div *ngIf="nome.invalid && formDir.submitted" class="uk-margin" class="validation-error">
+    <p *ngIf="nome.errors?.['required']">
+        campo obligatório
+    </p>
+</div>
 
   <div class="uk-margin">
     <label class="uk-form-label" for="form-stacked-email"><h3>E-mail</h3></label>
     <div class="uk-form-controls">
-      <input class="uk-input" id="form-stacked-email" type="email" placeholder="seuemail@google.com">
+      <input formControlName="email"  class="uk-input" id="form-stacked-email" type="email" placeholder="seuemail@google.com">
     </div>
   </div>
+
+  <div *ngIf="email.invalid && formDir.submitted" class="uk-margin" class="validation-error">
+    <p *ngIf="email.errors?.['required']">
+        campo obligatório
+    </p>
+</div>
 
   <div class="uk-margin">
     <label class="uk-form-label" for="form-stacked-telefone"><h3>Telefone</h3></label>
     <div class="uk-form-controls">
-      <input class="uk-input" id="form-stacked-telefone" type="tel" placeholder="(+244) xxx xxx xxx">
+      <input  formControlName="telefone" class="uk-input" id="form-stacked-telefone" type="tel" placeholder="(+244) xxx xxx xxx">
     </div>
   </div>
+
+  <div *ngIf="telefone.invalid && formDir.submitted" class="uk-margin"class="validation-error">
+    <p *ngIf="telefone.errors?.['required']">
+        campo obligatório
+    </p>
+ </div>
 
   <div class="uk-margin">
       <label class="uk-form-label" for="form-stacked-select"><h3>Medida por idade</h3></label>
       <div class="uk-form-controls">
-          <select (change)="idade($event)" class="uk-select" id="form-stacked-select">
+          <select formControlName="medidadeIdade" class="uk-select" id="form-stacked-select">
               <option>Selecione uma idade</option>
               <option value="18 anos">18 anos</option>
               <option value="19 anos">19 anos</option>
@@ -51,6 +95,12 @@
       </div>
   </div>
 
+  <div *ngIf="medidadeIdade.invalid && formDir.submitted" class="uk-margin"class="validation-error">
+    <p *ngIf="medidadeIdade.errors?.['required']">
+        campo obligatório
+    </p>
+ </div>
+
   <div class="uk-margin" >
       <label class="uk-form-label" for="form-stacked-file"><h3>Carregar Comprovativo</h3></label>
       <div class="uk-form-controls">
@@ -58,7 +108,7 @@
               <span uk-icon="icon: cloud-upload"></span>
               <span class="uk-text-middle">Arraste e solte ou</span>
               <div uk-form-custom>
-                  <input (change)="compr($event)" type="file">
+                  <input  (change)="Onfile($event)" type="file">
                   <span class="uk-link">selecione um arquivo</span>
               </div>
           </div>
@@ -68,12 +118,12 @@
   <div class="uk-margin">
       <label class="uk-form-label" for="form-stacked-textarea"><h3>Requisitos</h3></label>
       <div class="uk-form-controls">
-          <textarea  (change)="requ($event)" class="uk-textarea" id="form-stacked-textarea" rows="5" placeholder="Digite aqui os seus requisitos"></textarea>
+          <textarea  formControlName="requisicao" class="uk-textarea" id="form-stacked-textarea" rows="5" placeholder="Digite aqui os seus requisitos"></textarea>
       </div>
   </div>
   
   <div class="uk-margin" style="margin-bottom:10%">
-      <button class="uk-button uk-button-primary" (click)="enviar()" type="submit">Fazer pedido</button>
+      <button class="uk-button uk-button-primary"  type="submit">Fazer pedido</button>
   </div>
 </form>
 </div>
