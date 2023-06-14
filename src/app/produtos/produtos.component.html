@@ -1,0 +1,39 @@
+<app-topbar></app-topbar>
+<app-navbar></app-navbar>
+
+<div class="uk-container titulo">
+<form [formGroup]="form"  class="uk-form-stacked">
+  <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-text"><h3>Nome</h3></label>
+      <div class="uk-form-controls">
+          <input (change)="Onnome($event)" class="uk-input" id="form-stacked-text" type="text" placeholder="Seu nome completo">
+      </div>
+  </div>
+
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-img1"><h3>primeira imagem</h3></label>
+    <div class="uk-form-controls">
+        <input class="uk-input" (change)="Onimg1($event)" id="form-stacked-img1" type="file" >
+    </div>
+</div>
+<div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-img2"><h3>segunda imagem</h3></label>
+    <div class="uk-form-controls">
+        <input class="uk-input" (change)="Onimg2($event)" id="form-stacked-img2" type="file" >
+    </div>
+</div>
+
+<div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-img2"><h3>terceira imagem</h3></label>
+    <div class="uk-form-controls">
+        <input class="uk-input" (change)="Onimg3($event)" id="form-stacked-img2" type="file" >
+    </div>
+</div>
+
+
+  <div class="uk-margin" style="margin-bottom:10%">
+      <button class="uk-button uk-button-primary" (click)="fazeruploder()" type="submit">Fazer Uploader</button>
+  </div>
+</form>
+</div>
+
