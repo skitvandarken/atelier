@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment.development';
   providedIn: 'root'
 })
 export class AuthService {
-  accetoken = ""
+  accetoken = ''
   massage :File;
   constructor(private http: HttpClient) { }
 
@@ -19,7 +19,7 @@ export class AuthService {
   }
 
   login(body:any){
-    return this.http.post(`${environment.api}/Login`, body, {withCredentials:true})
+    return this.http.post(`${environment.api}/login`, body, {withCredentials:true})
   }
 
   user(){
@@ -27,7 +27,7 @@ export class AuthService {
   }
 
   refresh(){
-    return this.http.post(`${environment.api}/refresh`, {}, {withCredentials:true}); 
+    return this.http.post(`${environment.api}/refresh`, {}, {withCredentials:true})
   }
 
   produto(body:any){

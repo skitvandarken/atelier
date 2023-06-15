@@ -25,9 +25,9 @@ constructor (private formbuilder: FormBuilder, private authservice:AuthService, 
 
   submeter(){
     this.authservice.login(this.form.getRawValue()).subscribe(
-      (resp:any) =>
+      (res:any) =>
       { 
-        this.authservice.accetoken = resp.token;
+        this.authservice.accetoken = res.token;
         this.router.navigate(["dashboard"])
 
     },
